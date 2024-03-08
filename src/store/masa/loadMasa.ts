@@ -43,6 +43,7 @@ export const masaTest: ChainInfo = {
       type: GAS_PRICE_TYPE.UNKNOWN,
     },
   ],
+
   disabledWallets: [],
   features: [],
 }
