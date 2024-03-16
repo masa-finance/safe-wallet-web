@@ -11,6 +11,7 @@ export const masaTest: ChainInfo = {
   l2: false,
   isTestnet: true,
   description: 'Masa Testnet',
+  chainLogoUri: '/images/networks/masa.png',
   rpcUri: {
     authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION,
     value: 'https://subnets.avax.network/masatestne/testnet/rpc',
