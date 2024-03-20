@@ -20,7 +20,7 @@ const chains = [
   },
   {
     shortName: 'masa',
-    chainId: 3454,
+    chainId: 0x3454,
   },
 ].reduce<Chains>((result, { shortName, chainId }) => {
   result[shortName] = chainId.toString()
