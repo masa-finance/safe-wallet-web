@@ -16,7 +16,6 @@ import Link from 'next/link'
 import useSafeAddress from '@/hooks/useSafeAddress'
 import BatchIndicator from '@/components/batch/BatchIndicator'
 import WalletConnect from '@/features/walletconnect/components'
-import { PushNotificationsBanner } from '@/components/settings/PushNotifications/PushNotificationsBanner'
 import { FEATURES } from '@/utils/chains'
 import { useHasFeature } from '@/hooks/useChains'
 import Track from '@/components/common/Track'
@@ -54,7 +53,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
   return (
     <Paper className={css.container}>
       <div className={classnames(css.element, css.menuButton, !onMenuToggle ? css.hideSidebarMobile : null)}>
-        <IconButton onClick={handleMenuToggle} size="large" edge="start" color="default" aria-label="menu">
+        <IconButton onClick={handleMenuToggle} size="large" color="default" aria-label="menu">
           <MenuIcon />
         </IconButton>
       </div>
@@ -72,9 +71,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
       )}
 
       <div className={css.element}>
-        <PushNotificationsBanner>
-          <NotificationCenter />
-        </PushNotificationsBanner>
+        <NotificationCenter />
       </div>
 
       {safeAddress && (
