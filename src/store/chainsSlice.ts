@@ -1,9 +1,9 @@
 import { type ChainInfo } from '@safe-global/safe-gateway-typescript-sdk'
 import { createSelector } from '@reduxjs/toolkit'
 import type { RootState } from '.'
-import { loadMasa, masaTest } from './masa/loadMasa'
+import { loadMasa, masa, masaTest } from './masa/loadMasa'
 
-const initialState: ChainInfo[] = [masaTest]
+const initialState: ChainInfo[] = [masa, masaTest]
 
 const { slice, selector } = loadMasa('chains', initialState)
 
