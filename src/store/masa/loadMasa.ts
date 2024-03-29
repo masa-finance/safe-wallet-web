@@ -25,8 +25,8 @@ export const masa: ChainInfo = {
     value: 'https://subnets.avax.network/masanetwork/mainnet/rpc',
   },
   blockExplorerUriTemplate: {
-    address: 'https://subnets.avax.network/masanetwork/address/{{address}}',
-    txHash: 'https://subnets.avax.network/masanetwork/tx/{{txHash}}',
+    address: 'https://subnets.avax.network/masa/address/{{address}}',
+    txHash: 'https://subnets.avax.network/masa/tx/{{txHash}}',
     api: '',
   },
   nativeCurrency: {
