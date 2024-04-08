@@ -4021,10 +4021,10 @@
     web3-utils "^1.8.1"
     zksync-web3 "^0.14.3"
 
-"@safe-global/safe-deployments@^1.20.2", "@safe-global/safe-deployments@^1.25.0", "@safe-global/safe-deployments@^1.33.0", "@safe-global/safe-deployments@https://github.com/H34D/safe-deployments.git#main":
+"@safe-global/safe-deployments@^1.20.2", "@safe-global/safe-deployments@^1.25.0", "@safe-global/safe-deployments@^1.33.0", "@safe-global/safe-deployments@https://github.com/masa-finance/safe-deployments.git#main":
   version "1.34.0"
   uid "56602397c40f0169553ef02bd050184350ec6981"
-  resolved "https://github.com/H34D/safe-deployments.git#56602397c40f0169553ef02bd050184350ec6981"
+  resolved "https://github.com/masa-finance/safe-deployments.git#56602397c40f0169553ef02bd050184350ec6981"
   dependencies:
     semver "^7.6.0"
 
