@@ -11,7 +11,17 @@ import { networks } from '@safe-global/protocol-kit/dist/src/utils/eip-3770/conf
  */
 type Chains = Record<string, string>
 
-const chains = networks.reduce<Chains>((result, { shortName, chainId }) => {
+const chains = [
+  ...networks,
+  {
+    shortName: 'masatest',
+    chainId: 103454,
+  },
+  {
+    shortName: 'masa',
+    chainId: 13396,
+  },
+].reduce<Chains>((result, { shortName, chainId }) => {
   result[shortName] = chainId.toString()
   return result
 }, {})
