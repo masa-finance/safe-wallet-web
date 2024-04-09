@@ -115,7 +115,6 @@ export const loadMasa = <N extends string, T>(name: N, data: T) => {
   })
 
   const selector = (state: Record<N, SliceState>): SliceState => state[name]
-
   return {
     slice,
     selector,
